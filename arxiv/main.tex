@@ -1,0 +1,76 @@
+\documentclass[letterpaper]{article} %DO NOT CHANGE THIS
+
+\newcommand{\yrcite}[1]{\citeyearpar{#1}}
+
+%Allowing tables to go next to figures
+\usepackage{floatrow}
+% Table float box with bottom caption, box width adjusted to content
+\newfloatcommand{capbtabbox}{table}[][\FBwidth]
+
+% Macros used in the paper
+\usepackage{macros}
+\usepackage{basic}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\newenvironment{claim}[1]{\par\noindent\textbf{Claim}\space#1}{}
+\newenvironment{claimproof}[1]{\par\noindent\textbf{Proof}\space#1}{\hfill $\blacksquare$}
+
+
+\title{ABCD}
+
+
+ \renewcommand\Authsep{\hspace{2em}}
+ \renewcommand\Authand{\hspace{2em}}
+ \renewcommand\Authands{\hspace{2em}}
+
+ \renewcommand\Authfont{\normalfont}
+ \renewcommand\Affilfont{\small}
+
+ \author[$\dagger$]{A$^*$}
+ \author[$\dagger$]{B$^*$}
+ \author[$\dagger$]{C}
+ \author[$\dagger$]{D}
+
+ \affil[$\dagger$]{University of Wisconsin-Madison}
+ \affil[ ]{\footnotesize{\texttt{\{A, B, C, D\}@wisc.edu}}}
+
+
+\begin{document}
+
+\maketitle
+% \def\thefootnote{*}\footnotetext{These authors contributed equally to this work}
+
+% \def\thefootnote{\arabic{footnote}}
+% text text text\footnote{normal footnote}
+
+\begin{abstract}
+Abstract should be abstract.
+\end{abstract} 
+
+\section{Introduction}
+Introduction will be introduced.
+
+% \input{sections/intro}
+% \input{sections/related_work}
+% \input{sections/method}
+% \input{sections/analysis}
+% \input{sections/exp}
+% \input{sections/modeling}
+
+\bibliography{main}
+\bibliographystyle{plainnat}
+
+\newpage
+\appendix
+I still have appendix.
+
+% \input{appendix/glossary}
+% \input{appendix/theory}
+% \input{appendix/experiments}
+% \input{appendix/rebuttals_exp}
+
+\end{document}
